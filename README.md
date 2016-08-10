@@ -9,9 +9,7 @@ App中可以由使用者指定1顆重量不同的球，並可指定該球是比�
 所有原始碼都都在本專案中，Enjoy it!
 
 ###UI介面
-
-![alt tag](https://raw.githubusercontent.com/hayasilin/iOS-algorithm/branch/path/to/Simulator Screen Shot1.png)
-
+![alt tag](https://dl.dropboxusercontent.com/s/0hnqtgawxnxzdzp/Simulator%20Screen%20Shot1.png)
 
 
 
