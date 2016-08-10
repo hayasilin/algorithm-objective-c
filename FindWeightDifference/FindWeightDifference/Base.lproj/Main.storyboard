@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題：如果有12顆外表長得一模一樣的金色的球，裡面11顆重量一樣，只有一顆重量差一點點，還有你有一個用3次後就會壞掉的天平，要如何測試出來哪一顆球是唯一不一樣的呢？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-G8-Znv">
+                                <rect key="frame" x="20" y="28" width="560" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="3jO-F6-vT4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="點選此欄" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2w-9B-uyg">
+                                <rect key="frame" x="200" y="123" width="385" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeC-oJ-g6p">
+                                <rect key="frame" x="20" y="157" width="165" height="30"/>
+                                <state key="normal" title="或是讓系統幫你隨機挑選"/>
+                                <connections>
+                                    <action selector="pickNumberRandomlyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sbm-x2-3gU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isT-Vn-Gse">
+                                <rect key="frame" x="255" y="245" width="90" height="30"/>
+                                <state key="normal" title="開始執行程式"/>
+                                <connections>
+                                    <action selector="runProgramButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kda-Up-FgE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1次秤重" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8n-GP-dU7">
+                                <rect key="frame" x="208" y="283" width="184" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="JRv-Hr-flI"/>
+                                    <constraint firstAttribute="width" constant="184" id="cOi-yK-Mb9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第2次秤重" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqo-av-f7C">
+                                <rect key="frame" x="208" y="383" width="184" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="1KX-n6-JJm"/>
+                                    <constraint firstAttribute="height" constant="24" id="JOZ-yU-p6w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第3次秤重" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbO-Vd-DOg">
+                                <rect key="frame" x="208" y="483" width="184" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="W3b-bm-YPi"/>
+                                    <constraint firstAttribute="width" constant="184" id="kzP-9h-aeu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvo-m2-bd4">
+                                <rect key="frame" x="20" y="315" width="560" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="e3g-hO-bGG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-pe-4iR">
+                                <rect key="frame" x="20" y="415" width="560" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="G9a-Ek-Y62"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-ED-2iN">
+                                <rect key="frame" x="20" y="515" width="560" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8WQ-Av-1rh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指定1個不同重量的特殊球：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-Vu-8jM">
+                                <rect key="frame" x="20" y="128" width="176" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="03f-ET-lkx"/>
+                                    <constraint firstAttribute="width" constant="176" id="xhV-NW-SJe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指定該特殊球的重量輕重：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biN-wh-91M">
+                                <rect key="frame" x="20" y="201" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="BK3-qc-gTL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-c1-baY">
+                                <rect key="frame" x="200" y="197" width="120" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ieP-H5-5Kr"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="輕"/>
+                                    <segment title="重"/>
+                                </segments>
+                                <connections>
+                                    <action selector="weightSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="vhe-6c-yfB"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-8y-xDf">
+                                <rect key="frame" x="546" y="245" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0Z-YD-1IX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hbO-Vd-DOg" firstAttribute="centerX" secondItem="ARs-pe-4iR" secondAttribute="centerX" id="0Ac-e5-ec9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ARs-pe-4iR" secondAttribute="leading" id="15u-hZ-mur"/>
+                            <constraint firstItem="qqo-av-f7C" firstAttribute="centerX" secondItem="Tvo-m2-bd4" secondAttribute="centerX" id="5JN-W0-2Or"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9x0-ED-2iN" secondAttribute="trailing" id="9jn-mo-GQs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xeC-oJ-g6p" secondAttribute="leading" id="AAh-Lx-1S1"/>
+                            <constraint firstItem="L2w-9B-uyg" firstAttribute="centerY" secondItem="EHg-Vu-8jM" secondAttribute="centerY" id="Blb-My-uph"/>
+                            <constraint firstItem="MRn-G8-Znv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="D07-35-S59"/>
+                            <constraint firstItem="X8n-GP-dU7" firstAttribute="centerX" secondItem="isT-Vn-Gse" secondAttribute="centerX" id="DW9-A0-hq3"/>
+                            <constraint firstItem="biN-wh-91M" firstAttribute="top" secondItem="xeC-oJ-g6p" secondAttribute="bottom" constant="14" id="Ed6-dF-75h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L2w-9B-uyg" secondAttribute="trailing" constant="-5" id="HJT-3v-Brq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Tvo-m2-bd4" secondAttribute="leading" id="J4X-4H-Znb"/>
+                            <constraint firstItem="ARs-pe-4iR" firstAttribute="top" secondItem="qqo-av-f7C" secondAttribute="bottom" constant="8" id="JSj-hV-elx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ARs-pe-4iR" secondAttribute="trailing" id="M0T-eS-DDS"/>
+                            <constraint firstItem="qqo-av-f7C" firstAttribute="top" secondItem="Tvo-m2-bd4" secondAttribute="bottom" constant="8" id="MX4-7M-Pqm"/>
+                            <constraint firstItem="k2x-8y-xDf" firstAttribute="centerY" secondItem="isT-Vn-Gse" secondAttribute="centerY" id="OfH-wP-EPi"/>
+                            <constraint firstItem="9x0-ED-2iN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QHM-DL-pUU"/>
+                            <constraint firstItem="JXw-c1-baY" firstAttribute="leading" secondItem="biN-wh-91M" secondAttribute="trailing" constant="-7" id="R5n-np-aws"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="L2w-9B-uyg" secondAttribute="leading" constant="-120" id="TPi-Oi-KUe"/>
+                            <constraint firstItem="JXw-c1-baY" firstAttribute="centerY" secondItem="biN-wh-91M" secondAttribute="centerY" id="V7p-C1-W5M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MRn-G8-Znv" secondAttribute="trailing" id="XE6-VJ-jhe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tvo-m2-bd4" secondAttribute="trailing" id="Xug-Ro-0dS"/>
+                            <constraint firstItem="EHg-Vu-8jM" firstAttribute="top" secondItem="MRn-G8-Znv" secondAttribute="bottom" constant="13" id="bXZ-SR-GpD"/>
+                            <constraint firstItem="Tvo-m2-bd4" firstAttribute="top" secondItem="X8n-GP-dU7" secondAttribute="bottom" constant="8" id="dkz-As-3tX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="biN-wh-91M" secondAttribute="leading" id="dv0-al-Jp4"/>
+                            <constraint firstItem="X8n-GP-dU7" firstAttribute="top" secondItem="isT-Vn-Gse" secondAttribute="bottom" constant="8" id="e5r-Ga-Ec8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MRn-G8-Znv" secondAttribute="leading" id="msL-Mv-mnb"/>
+                            <constraint firstItem="isT-Vn-Gse" firstAttribute="top" secondItem="JXw-c1-baY" secondAttribute="bottom" constant="20" id="mz0-Fq-HI3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k2x-8y-xDf" secondAttribute="trailing" constant="-5" id="nju-yc-ZQd"/>
+                            <constraint firstItem="L2w-9B-uyg" firstAttribute="leading" secondItem="EHg-Vu-8jM" secondAttribute="trailing" constant="4" id="ob1-PM-1q8"/>
+                            <constraint firstItem="9x0-ED-2iN" firstAttribute="top" secondItem="hbO-Vd-DOg" secondAttribute="bottom" constant="8" id="qYC-5o-aod"/>
+                            <constraint firstItem="isT-Vn-Gse" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skQ-TV-Jjl"/>
+                            <constraint firstItem="hbO-Vd-DOg" firstAttribute="top" secondItem="ARs-pe-4iR" secondAttribute="bottom" constant="8" id="stD-aG-BIP"/>
+                            <constraint firstItem="xeC-oJ-g6p" firstAttribute="top" secondItem="EHg-Vu-8jM" secondAttribute="bottom" constant="8" id="vTy-cJ-CAi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EHg-Vu-8jM" secondAttribute="leading" id="zqp-gZ-qme"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TPi-Oi-KUe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="firstWeightTextView" destination="Tvo-m2-bd4" id="x6t-Kc-USs"/>
+                        <outlet property="pickNumberTextField" destination="L2w-9B-uyg" id="i1Z-P6-A73"/>
+                        <outlet property="runProgramButton" destination="isT-Vn-Gse" id="Qum-jc-m93"/>
+                        <outlet property="secondWeightTextView" destination="ARs-pe-4iR" id="dC6-sE-aQ0"/>
+                        <outlet property="thirdWeightTextView" destination="9x0-ED-2iN" id="jsP-l6-JjB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="349"/>
+        </scene>
+    </scenes>
+</document>
