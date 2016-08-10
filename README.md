@@ -11,6 +11,5 @@ App中可以由使用者指定1顆重量不同的球，並可指定該球是比�
 ###UI介面
 ![alt tag](https://dl.dropboxusercontent.com/s/0hnqtgawxnxzdzp/Simulator%20Screen%20Shot1.png)
 
-
-
+![alt tag](https://dl.dropboxusercontent.com/s/kcyrtxoizoeerxm/Simulator%20Screen%20Shot2.png)
 
