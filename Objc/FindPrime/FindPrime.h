@@ -10,6 +10,8 @@
 
 @interface FindPrime : NSObject
 
-- (void)findPrimt:(int)number;
+- (void)findPrime:(int)number;
+
+- (NSArray *)listedPrime:(int)number;
 
 @end
