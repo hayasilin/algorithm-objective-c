@@ -40,6 +40,44 @@ class FindPrime: NSObject {
         return false;
     }
     
+    //基本做法，找出該數字底下的所有數字，一個個整除比對
+    func listedPrime(n:Int) -> [Int]
+    {
+        if n < 2
+        {
+            return [];
+        }
+        
+        var isPrime: Bool?;
+        var primeArray = [Int]();
+        
+        let list = 2...n;
+        
+        for i in list {
+            
+            isPrime = true;
+            
+            let jlist = 2..<i
+            
+            for j in jlist
+            {
+                if i % j == 0
+                {
+                    isPrime = false;
+                }
+            }
+            
+            if isPrime == true
+            {
+                primeArray.append(i);
+            }
+            
+        }
+        
+        return primeArray;
+    }
+    
+    //使用Swift library的做法
     func primes(n: Int) -> [Int]
     {
         var numbers = [Int](2 ..< n)
