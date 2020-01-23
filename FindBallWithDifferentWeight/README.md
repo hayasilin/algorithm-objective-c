@@ -15,7 +15,4 @@ App中可以由使用者指定1顆重量不同的球，並可指定該球是比�
 This repositority challenges to solve the question above by writing an Objective-C code and solving the question by its own. Users can choose one ball with an odd weight and can set it's weight heavier or lighter than the rest. The program will do the rest. Enjoy it!
 
 ###UI interface
-![alt tag](https://dl.dropboxusercontent.com/s/0hnqtgawxnxzdzp/Simulator%20Screen%20Shot1.png)
-
-![alt tag](https://dl.dropboxusercontent.com/s/kcyrtxoizoeerxm/Simulator%20Screen%20Shot2.png)
-
+<img width=320 src="https://github.com/hayasilin/algorithm-objective-c/blob/master/FindBallWithDifferentWeight/Simulator%20Screen%20Shot1.png"><img width=320 src="https://github.com/hayasilin/algorithm-objective-c/blob/master/FindBallWithDifferentWeight/Simulator%20Screen%20Shot2.png">
