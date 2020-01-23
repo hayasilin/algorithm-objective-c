@@ -1,6 +1,6 @@
-# iOS-algorithm
+# Algorithm with Objective-C
 
-### Hi community
+## Hi community
 
 邏輯數學問題：如果有12顆外表長得一模一樣的金色的球，裡面11顆重量一樣，只有一顆重量差一點點，還有你有一個用3次後就會壞掉的天平，要如何測試出來哪一顆球是唯一不一樣的呢？
 
@@ -14,5 +14,5 @@ App中可以由使用者指定1顆重量不同的球，並可指定該球是比�
 
 This repositority challenges to solve the question above by writing an Objective-C code and solving the question by its own. Users can choose one ball with an odd weight and can set it's weight heavier or lighter than the rest. The program will do the rest. Enjoy it!
 
-###UI interface
+## UI
 <img width=320 src="https://github.com/hayasilin/algorithm-objective-c/blob/master/FindBallWithDifferentWeight/Simulator%20Screen%20Shot1.png"><img width=320 src="https://github.com/hayasilin/algorithm-objective-c/blob/master/FindBallWithDifferentWeight/Simulator%20Screen%20Shot2.png">
